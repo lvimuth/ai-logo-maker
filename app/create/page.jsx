@@ -1,8 +1,9 @@
 import React from 'react'
+import LogoTitle from './_components/LogoTitle'
 
 function CreateLogo() {
   return (
-    <div>CreateLogo</div>
+    <div><LogoTitle/></div>
   )
 }
 
