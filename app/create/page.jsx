@@ -7,7 +7,7 @@ function CreateLogo() {
   return (
     <div className="mt-28 p-10 border rounded-xl">
       <LogoTitle />
-      <div className="flex items-center">
+      <div className="flex items-center justify-between mt-10">
         <Button variant="outline">
           <ArrowLeft />
           Previous
