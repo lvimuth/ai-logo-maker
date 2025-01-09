@@ -7,7 +7,7 @@ import { useSearchParams } from "next/navigation";
 function LogoTitle({ onHandleChange }) {
   const searchParams = useSearchParams();
   const [title, setTitle] = useState(searchParams?.get("title") ?? "");
-
+  
   return (
     <div>
       <HeadingDescription
@@ -19,7 +19,7 @@ function LogoTitle({ onHandleChange }) {
         placeholder={Lookup.InputTitlePlaceHolder}
         className="p-4 border rounded-lg mt-2 w-full"
         defaultValue={title}
-        onChange={() => onHandleChange(e.target.value)}
+        onChange={(e) => onHandleChange(e.target.value)}
       />
     </div>
   );

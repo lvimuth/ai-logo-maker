@@ -12,7 +12,11 @@ function CreateLogo() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState();
   const onHandleChange = (field, value) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+    console.log("onHandleChange", formData);
   };
   return (
     <div className="mt-28 p-10 border rounded-xl">
