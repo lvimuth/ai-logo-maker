@@ -3,7 +3,7 @@ import HeadingDescription from "./HeadingDescription";
 import Lookup from "@/app/_data/Lookup";
 import Colors from "../../_data/Colors";
 
-function LogoColorPalette({onHandleChange}) {
+function LogoColorPalette({ onHandleChange }) {
   const [selectedOption, setSelectedOption] = useState();
   return (
     <div className="my-10">
@@ -22,7 +22,7 @@ function LogoColorPalette({onHandleChange}) {
           >
             {palette?.colors.map((color, index) => (
               <div
-                index={index}
+                key={index}
                 onClick={() => {
                   setSelectedOption(palette.name);
                   onHandleChange(palette.name);
