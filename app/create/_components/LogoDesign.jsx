@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import HeadingDescription from "./HeadingDescription";
 import Lookup from "@/app/_data/Lookup";
 import LogoDesig from "@/app/_data/LogoDesig";
 import Image from "next/image";
 
 function LogoDesign() {
+  const [selectedOption,setSelectedOption] = useState()
   return (
     <div className="my-10">
       <HeadingDescription
