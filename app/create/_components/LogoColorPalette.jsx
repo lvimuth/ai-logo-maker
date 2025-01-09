@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeadingDescription from "./HeadingDescription";
 import Lookup from "@/app/_data/Lookup";
-import Colors from "./Colors";
+import Colors from "../../_data/Colors";
 
 function LogoColorPalette({onHandleChange}) {
   const [selectedOption, setSelectedOption] = useState();
