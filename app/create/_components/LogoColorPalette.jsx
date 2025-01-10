@@ -3,8 +3,8 @@ import HeadingDescription from "./HeadingDescription";
 import Lookup from "@/app/_data/Lookup";
 import Colors from "../../_data/Colors";
 
-function LogoColorPalette({ onHandleChange }) {
-  const [selectedOption, setSelectedOption] = useState();
+function LogoColorPalette({ onHandleChange,formData }) {
+  const [selectedOption, setSelectedOption] = useState(formData?.palette);
   return (
     <div className="my-10">
       <HeadingDescription
