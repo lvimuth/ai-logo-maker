@@ -1,7 +1,7 @@
 import React from "react";
 
 function LogoIdeas() {
-  return <div>LogoIdeas</div>;
+  return <div>Logo</div>;
 }
 
 export default LogoIdeas;
